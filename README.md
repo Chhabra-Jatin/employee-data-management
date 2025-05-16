@@ -1,30 +1,36 @@
-📘 Employee Data Management System
-A full-stack web application to manage employee records — allowing users to create, update, list, and delete employee entries. The application is built using Spring Boot for the backend and ReactJS for the frontend.
+# 📘 Employee Data Management System
 
-🚀 Tech Stack
-🧩 Backend
-Java 17
-Spring Boot 3
-Spring Data JPA
-MySQL Database
-HikariCP (Connection Pooling)
-CORS Configuration (for frontend-backend interaction)
-REST API Design
+A full-stack web application to manage employee records — allowing users to create, update, list, and delete employee entries. The application is built using **Spring Boot** for the backend and **ReactJS** for the frontend.
 
-🎨 Frontend
-ReactJS (functional components)
-React Router DOM
-Bootstrap 5
-FontAwesome / Bootstrap Icons
-Axios (for HTTP requests)
+---
 
-🔄 How Frontend & Backend Communicate
-The frontend (React) runs on port 3000, and the backend (Spring Boot) runs on port 8080.
+## 🚀 Tech Stack
 
-To allow cross-origin requests between them, CORS is enabled in the backend via a global configuration.
+### 🧩 Backend
+- Java 17
+- Spring Boot 3
+- Spring Data JPA
+- MySQL
+- HikariCP
+- REST APIs
+- Global CORS Configuration
 
-✅ CORS Setup (Example in Spring Boot):
+### 🎨 Frontend
+- ReactJS (Hooks)
+- React Router DOM
+- Axios (for API requests)
+- Bootstrap 5
+- FontAwesome / Bootstrap Icons
 
+---
+
+## 🔄 Frontend & Backend Communication
+
+The React frontend (running on port `3000`) communicates with the Spring Boot backend (port `8080`) using **RESTful API calls** via Axios.
+
+To enable this cross-origin communication, CORS is configured in Spring Boot:
+
+```java
 @Configuration
 public class CorsConfig {
     @Bean
@@ -34,45 +40,67 @@ public class CorsConfig {
                                    .allowedMethods("*");
     }
 }
+
 This allows the React frontend to communicate with backend APIs like:
 
 POST   /api/employees
+
 GET    /api/employees
+
 PUT    /api/employees/{id}
+
 DELETE /api/employees/{id}
 
 ✨ Features
+🧑 Add new employee (first name, last name, email)
 
-🧑 Add new employee with first name, last name, and email
-✏️ Edit existing employee details
+✏️ Edit employee details
+
 🗑️ Delete employee record
-🔍 Search/filter employees
-🔃 Sort employees by first or last name
-🧾 Real-time table updates using Axios
-🎨 Responsive & animated UI using Bootstrap
+
+🔍 Search employees by name/email
+
+⬇️⬆️ Sort employees by first or last name
+
+📋 Real-time table updates
+
+🎨 Clean UI with responsive layout
 
 📁 Folder Structure
 
 /EmployeeDataManagement
 │
-├── springboot-backend        # Spring Boot REST API + MySQL integration
+├── springboot-backend        # Spring Boot REST API + MySQL
 │   └── src/main/java/...     # Controllers, Services, Repository
 │
-├── react-hooks-frontend      # ReactJS frontend using hooks and routing
+├── react-hooks-frontend      # ReactJS frontend
 │   └── src/components        # Components like List, Add, Header, etc.
+
 
 
 🛠️ Setup Instructions
 🔧 Backend (Spring Boot)
 Import springboot-backend into Eclipse/IntelliJ
+
 Update your application.properties with MySQL DB credentials
+
 Run SpringbootBackendApplication.java
+
 Ensure it starts on: http://localhost:8080
 
 🌐 Frontend (React)
 Navigate to react-hooks-frontend folder
+
 Install dependencies:
+
+bash
+Copy
+Edit
 npm install
 Start the React app:
+
+bash
+Copy
+Edit
 npm start
 Visit: http://localhost:3000
