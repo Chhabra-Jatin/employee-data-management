@@ -44,27 +44,21 @@ public class CorsConfig {
 This allows the React frontend to communicate with backend APIs like:
 
 POST   /api/employees
-
 GET    /api/employees
-
 PUT    /api/employees/{id}
-
 DELETE /api/employees/{id}
+
+
 
 ✨ Features
 🧑 Add new employee (first name, last name, email)
-
 ✏️ Edit employee details
-
 🗑️ Delete employee record
-
 🔍 Search employees by name/email
-
 ⬇️⬆️ Sort employees by first or last name
-
 📋 Real-time table updates
-
 🎨 Clean UI with responsive layout
+
 
 📁 Folder Structure
 
@@ -79,28 +73,15 @@ DELETE /api/employees/{id}
 
 
 🛠️ Setup Instructions
+
 🔧 Backend (Spring Boot)
 Import springboot-backend into Eclipse/IntelliJ
-
 Update your application.properties with MySQL DB credentials
-
 Run SpringbootBackendApplication.java
-
 Ensure it starts on: http://localhost:8080
 
 🌐 Frontend (React)
 Navigate to react-hooks-frontend folder
-
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Start the React app:
-
-bash
-Copy
-Edit
-npm start
+Install dependencies: npm install
+Start the React app: npm start
 Visit: http://localhost:3000
