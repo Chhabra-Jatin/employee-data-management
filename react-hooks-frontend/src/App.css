@@ -1,0 +1,222 @@
+
+.custom-navbar {
+    background: linear-gradient(90deg, #343a40, #1f2a3a);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: color 0.3s ease;
+}
+
+.header-title i {
+    color: #0dcaf0;
+}
+
+.header-title:hover {
+    color: #0dcaf0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.input-group input.form-control {
+    border-radius: 0 8px 8px 0;
+}
+
+.input-group-text {
+    border-radius: 8px 0 0 8px;
+    background-color: #f1f3f5;
+    border-color: #ced4da;
+}
+
+th:hover .fa-arrow-down-a-z,
+th:hover .fa-arrow-up-z-a {
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.table th, .table td {
+    font-size: 0.95rem;
+}
+
+.table th {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn-group .btn {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #4dabf7;
+    border-color: #4dabf7;
+}
+
+.btn-primary:hover {
+    background-color: #339af0;
+    border-color: #339af0;
+}
+
+.btn-danger {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-danger:hover {
+    background-color: #fa5252;
+    border-color: #fa5252;
+}
+
+.table tbody td {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2d2d2d;
+    padding: 12px 16px;
+}
+
+.table tbody td:first-child {
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f7faff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-bordered > tbody > tr > td {
+    border-color: #dee2e6;
+}
+
+@media (max-width: 768px) {
+    .table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, #1f1f1f, #3c3c3c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 560px;
+    background: #fefefe;
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease-in-out;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-weight: 700;
+    color: #222;
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #4dabf7;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input.form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+input.form-control:focus {
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 0.1rem rgba(77, 171, 247, 0.25);
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.btn-success {
+    background-color: #38b000;
+    border-color: #38b000;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.btn-success:hover {
+    background-color: #2d8700;
+    border-color: #2d8700;
+}
+
+.btn-outline-secondary {
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid #adb5bd;
+    color: #495057;
+    background-color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #dee2e6;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
